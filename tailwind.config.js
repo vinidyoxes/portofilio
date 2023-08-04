@@ -6,6 +6,14 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+
+    fontFamily: {
+      'sans': ['Helvetica', 'Arial', 'sans-serif'],
+      'display': ['Montserrat'],
+      'body': ['Avenir']
+      
+    },
+
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -13,6 +21,7 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
+    
   },
   plugins: [],
 }
