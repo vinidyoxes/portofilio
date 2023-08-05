@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Navbar from './components/navbar/Navbar'
 import './styles/globals.css'
 import { Inter } from 'next/font/google'
-
+import styles from './styles/layout.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
       <Head>
       <link href="/dist/output.css" rel="stylesheet"/>
       </Head>
-      <body className={inter.className}>
+      <body className={  styles.main}>
         <Navbar></Navbar>
         {children}</body>
     </html>
