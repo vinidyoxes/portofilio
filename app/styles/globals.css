@@ -28,3 +28,13 @@
   font-family: 'Avenir', var(--Montserrat);                                          
 }
  
+
+.opened{
+  right: 0%;
+  transition: .5s;
+}
+.closed{
+  right: -100%;
+  transition: .5s;
+
+}

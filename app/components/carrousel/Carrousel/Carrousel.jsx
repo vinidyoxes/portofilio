@@ -10,7 +10,6 @@ function Carrousel() {
     <div className={styles.carrousel}>
     <Slick>
 {        technologies.map((item,index)=>{
-            console.log(item.icon)
          return(
             <div key={index}>
 
