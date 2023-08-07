@@ -27,14 +27,36 @@
   padding: 0;
   font-family: 'Avenir', var(--Montserrat);                                          
 }
+
+html{
+  font-size: 16px;
+  scroll-behavior: smooth;
+  font-family: var(--montserrat);
+  overflow-x: hidden;
+  box-sizing: border-box;
+
+
+
+}
+
+body{
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
  
 
 .opened{
   right: 0%;
-  transition: .5s;
+
+  transition: right .5s;
+
 }
 .closed{
-  right: -100%;
-  transition: .5s;
+  right: -80%;
+  display: hidden;
+  transition: right .5s, display 5s;
+
+  
 
 }

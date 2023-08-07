@@ -11,7 +11,7 @@ export default function Home() {
 
 
   return (
-    <main>
+    <main className={styles.main}>
 
         <div className={styles.background}>
       <section id='banner' className={`${styles.banner} bg-black text-white`}>
@@ -27,7 +27,7 @@ export default function Home() {
 
                 <Button  icon="true" style='ghost'>Curriculo</Button>
                 <Button  icon="true" style='line'>Projetos</Button>
-                <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"><button>Download CV</button></a>
+
 
               </div>
             </div>

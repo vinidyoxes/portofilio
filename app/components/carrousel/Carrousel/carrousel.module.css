@@ -6,6 +6,18 @@
     margin: 0 auto;
     padding: 10px;
     color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
     
     
+}
+
+@media screen and (max-width:480px) {
+ 
+    .technology h4 {
+        font-size: .6rem;
+    }
+
 }

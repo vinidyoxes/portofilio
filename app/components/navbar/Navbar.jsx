@@ -11,6 +11,8 @@ import Button from '../buttons/Button'
 import Image from 'next/image'
 import {FiMenu} from 'react-icons/fi'
 import {GrClose} from 'react-icons/gr'
+import { IconContext } from "react-icons";
+
 
 
 
@@ -55,7 +57,7 @@ function Navbar() {
         </div>
       <div className={styles.menu}>
 
-     <Link href='#'onClick={handleClick}><Button style={{color:'white'}}>{toggle ? <FiMenu/> : <GrClose/> }</Button></Link>  
+     <Link href='#'onClick={handleClick}><Button style={{color:'white'}}><FiMenu/></Button></Link>  
       </div>
 
 
@@ -63,7 +65,12 @@ function Navbar() {
     {/* ------------------Sidebar----------------- */}
     {
 
-      <div className={`${styles.sideBar} ${toggle ? 'opened' : 'closed'}`}>
+      <div className={`${styles.sideBar} ${!toggle ? 'opened' : 'closed'}`}>
+        <IconContext.Provider  value={{ color: "white", className: "global-class-name" }}>
+
+        <div className={styles.closeNav}><Link href='#' onClick={(event)=>{SetToggle(!toggle);}}><GrClose/></Link></div>
+
+        </IconContext.Provider>
         <div className={`${styles.links}`}>
           <ul className={styles.navLinks} >
             <LinkNav href='/' link='Inicio' />

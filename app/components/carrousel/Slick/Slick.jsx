@@ -16,6 +16,16 @@ function Slick({children}) {
       autoplaySpeed: 2000,
       pauseOnHover: false,
       cssEase: "linear",
+      responsive: [
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false
+          }
+        }]
       };
 
   return (
