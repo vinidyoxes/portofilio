@@ -47,7 +47,7 @@ body{
  
 
 .opened{
-  right: 0%;
+  right: -1%;
 
   transition: right .5s;
 
@@ -57,8 +57,4 @@ body{
   display: hidden;
   transition: right .5s, display 5s;
 
-}
-
-[data-theme="white"] .content h1{
-  color: black;
 }

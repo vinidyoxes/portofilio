@@ -15,6 +15,7 @@ function Slick({children}) {
       speed: 2000,
       autoplaySpeed: 0,
       pauseOnHover: false,
+      swipeToSlide: true,
       cssEase: "linear",
       responsive: [
         {

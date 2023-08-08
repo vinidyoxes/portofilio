@@ -1,7 +1,8 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from './Navbar.module.css'
 import Logo from '../../../public/logoBranco.svg'
+import LogoBlack from '../../../public/logoPreto.svg'
 import Link from 'next/link'
 import { BsGithub ,BsBehance } from 'react-icons/bs'
 import {FaBehanceSquare} from 'react-icons/fa'
@@ -18,12 +19,19 @@ import { useTheme } from 'next-themes'
 
 
 function Navbar() {
-  const {theme, setTheme} = useTheme()
-  const [toggle, SetToggle] = useState('false');
-  const handleClick = ()=>{
-    SetToggle(!toggle)
-  }
+  const [mounted, setMounted] = useState('false');
+  useEffect(() => setMounted(true), []);
 
+  
+  const { theme, setTheme } = useTheme();
+  const [toggle, setToggle] = useState(false); // Changed SetToggle to setToggle
+  const handleClick = () => {
+    setToggle(!toggle);
+  }
+  
+  if (!mounted) {
+    return null;
+  }
   return (
     <nav  className={`${styles.navbar}`}>
 
@@ -31,17 +39,21 @@ function Navbar() {
         <ul className={styles.navLinks} >
           <LinkNav href='/' link='Inicio' />
           <LinkNav href='/about' link='Sobre Mim'></LinkNav>
-          <LinkNav href='#' link='Projetos'/>
+          <LinkNav href='/projects' link='Projetos'/>
           <LinkNav href='#' link='Skills'/>
         </ul>
       </div>
 
-      <div className={styles.logoDiv}>
-      <div className={styles.logoContainer} style={{position:'relative'}}>
-        <Image src={Logo} layout='fill' title='Vinicius Henrique'></Image>
-      </div>
-        <h4>Vini Dyoxes</h4>
-      </div>
+        <div className={styles.logoDiv}>
+
+        <Link href='/'>
+        <div className={styles.logoContainer} style={{position:'relative'}}>
+          <Image src={theme === "dark" ? Logo : LogoBlack} layout='fill' title='Vinicius Henrique' alt='my personal photo'></Image>
+        </div>
+          <h4>Vini Dyoxes</h4>
+        </Link>
+
+        </div>
 
     <div className={`${styles.otherLinks}`}>
       <ul className={` flex gap-2 items-center social`}>
@@ -61,7 +73,7 @@ function Navbar() {
         </div>
       <div className={styles.menu}>
 
-     <Link href='#'onClick={handleClick}><Button style={{color:'white'}}><FiMenu/></Button></Link>  
+     <Link href='#'onClick={handleClick}><Button><FiMenu size={20} color = {theme === 'dark' ? 'white' : 'black'} /></Button></Link>  
       </div>
 
 
@@ -72,7 +84,7 @@ function Navbar() {
       <div className={`${styles.sideBar} ${!toggle ? 'opened' : 'closed'}`}>
         
 
-        <div className={styles.closeNav} onClick={(event)=>{SetToggle(!toggle);}}>
+        <div className={styles.closeNav} onClick={(event)=>{setToggle(!toggle);}}>
           <IconContext.Provider  value={{size:'16px', backgroundColor:'white', color:'white'}}>
             <GrClose/>
           </IconContext.Provider>
@@ -97,7 +109,14 @@ function Navbar() {
     </div>
     <div className={`${styles.options}`}>
         <Image src={require('/public/images/emojione-v-1-flag-for-brazil.svg')} width={20} height={20}></Image>  
-        <span><FiSun/></span>
+       
+       
+        <span className='cursor-pointer' onClick={()=>{setTheme(theme === "dark" ? "light" : "dark")}}>
+ 
+          {theme === "dark" ? <FiMoon size={20}/> : <FiSun size={20}/>}
+          </span>
+
+
         </div>
 
       </div>
