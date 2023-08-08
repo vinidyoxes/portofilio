@@ -13,7 +13,7 @@ function Slick({children}) {
       slidesToScroll: 1,
       autoplay: true,
       speed: 2000,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 0,
       pauseOnHover: false,
       cssEase: "linear",
       responsive: [

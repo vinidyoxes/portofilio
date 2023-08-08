@@ -3,6 +3,7 @@
         border-bottom: 0px solid white;
         background-color: none;
         position: relative;   
+        font-weight: 500;
     }
     
     .link:after {    
