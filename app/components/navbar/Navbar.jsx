@@ -90,10 +90,9 @@ function Navbar() {
 
         <div className={`${styles.otherLinks}`}>
       <ul className={` flex gap-4 items-center`}>
-        <Link href="#"className="icon"><BsGithub className='size-2em'></BsGithub></Link>
-        <Link href="#"className="icon"><Image src={require('/public/images/devicon-behance.svg')} width="20" height="20"></Image></Link>
-        <Link href="#"className="icon"><Image src={require('/public/images/skill-icons-linkedin.png')} width="20" height="20"></Image></Link>
-        <Link href="#"className="icon"></Link>
+        <Link href="https://github.com/vinidyoxes/"className="icon"><BsGithub className='size-2em'></BsGithub></Link>
+        <Link href="https://www.behance.net/vinidyoxes"className="icon"><Image src={require('/public/images/devicon-behance.svg')} width="20" height="20"></Image></Link>
+        <Link href="https://www.linkedin.com/in/viniciushenrique-silva/"className="icon"><Image src={require('/public/images/skill-icons-linkedin.png')} width="20" height="20"></Image></Link>
       </ul>
     </div>
     <div className={`${styles.options}`}>
