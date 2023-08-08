@@ -14,7 +14,7 @@ function Carrousel() {
             <div key={index}>
 
                  <div  className={styles.technology} style={{textAlign:'center', display:'flex', flexDirection:'column', alignItems:'center'}}>
-                     <span><Image src={item.icon} width="50px" height="50px"></Image></span>
+                     <span><Image src={item.icon} width="50" height="50"></Image></span>
                      <h4>{item.name}</h4>
                  </div>
 

@@ -69,13 +69,21 @@
         display: flex;
         flex-direction: column;
         align-items: start;
-        width: 100%;
+        width: 90%;
+    }
+
+    .sideBar .otherLinks{
+        margin-top: 50%;
+        gap: 1rem;
+        justify-content: space-between;
     }
     
     .sideBar .options{
         justify-self: baseline;
+        gap: 1rem;
         display: flex;
         margin-top: 100%;
+        
     }
 
     .closeNav{

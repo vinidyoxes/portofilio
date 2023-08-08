@@ -7,8 +7,9 @@ import Link from 'next/link'
 
 
 
-export default function Home() {
 
+
+export default function Home() {
 
   return (
     <main className={styles.main}>
@@ -25,8 +26,8 @@ export default function Home() {
               </div>
               <div className={styles.buttons}>
 
-                <Button  icon="true" style='ghost'>Curriculo</Button>
-                <Button  icon="true" style='line'>Projetos</Button>
+              <Link target='_blank' href='https://furyagency.000webhostapp.com/Vinicius%20Henrique%20-%20Frontend.pdf'><Button icon="true" style='ghost'>Curriculo</Button></Link>
+              <Link href='/projects/'><Button  icon="true" style='line'>Projetos</Button></Link>
 
 
               </div>
