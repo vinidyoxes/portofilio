@@ -4,15 +4,15 @@ import React, { useState } from 'react'
 import SideBarMotion from '../components/motion/sideBarMotion/SideBarMotion'
 
 
-function testes() {
-  const [toggle, SetToggle] = useState('false')
-  console.log(toggle)
+function Testes() {
+  const [Toggle, SetToggle] = useState('false')
+  console.log(Toggle)
 
   return (
     <>
-    <button onClick={() => { SetToggle(!toggle) } }>{toggle ? 'abrir' : 'fechar'}
+    <button onClick={() => { SetToggle(!Toggle) } }>{Toggle ? 'abrir' : 'fechar'}
     </button>
-    <SideBarMotion toggle={toggle}>
+    <SideBarMotion Toggle={Toggle}>
       <div className='p-12 text-white flex flex-col'>
         <ul>
           <li>Item 1</li>
@@ -27,4 +27,4 @@ function testes() {
   )
 }
 
-export default testes
+export default Testes

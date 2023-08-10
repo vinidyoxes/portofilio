@@ -6,7 +6,6 @@ import './styles/globals.css'
 import { Inter } from 'next/font/google'
 import styles from './styles/layout.module.css'
 import Provider from './provider'
-import Analytics from './utils/analytics'
 
 
 
