@@ -48,13 +48,24 @@ body{
 
 .opened{
   right: -1%;
-
-  transition: right .5s;
+  transition: right 1s ease-in;
+  animation: bounce .8s ease-in;
 
 }
 .closed{
-  right: -80%;
   display: hidden;
-  transition: right .5s, display 5s;
+  right: -90%;
+  transition: right .5s;
+  transition-timing-function: ease-in-out;
+  animation: bounce .8s ease-in delay iteration-count reverse fill-mode;
 
 }
+
+@keyframes bounce {
+  0%{right: -100%;}
+  40%{right: -1%;}
+	60% {right:-5%;}
+	70% {right:-1%;}
+
+}
+

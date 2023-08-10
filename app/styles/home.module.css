@@ -17,10 +17,11 @@
 
 [data-theme="light"] .banner{
     color: rgb(0, 0, 0);
+    transition: color 1.6s ease-in;
     background: linear-gradient(180deg, #FFF 50%, #116879 100%);
 
-
   }
+  
 
 .background{
    mix-blend-mode: lighten;

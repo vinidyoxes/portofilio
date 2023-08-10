@@ -81,6 +81,7 @@ function Navbar() {
     {/* ------------------Sidebar----------------- */}
     {
 
+      
       <div className={`${styles.sideBar} ${toggle ? 'opened' : 'closed'}`}>
         
 

@@ -4,6 +4,11 @@ import styles from './styles/home.module.css'
 import Button from './components/buttons/Button'
 import Carrousel from './components/carrousel/Carrousel/Carrousel'
 import Link from 'next/link'
+import SlideIn from './components/motion/slideIn/SlideIn'
+import SlideFadeAnimation from './components/motion/slideIn/SlideIn'
+import FadeInAnimation from './components/motion/fadeIn/FadeIn'
+
+
 
 
 
@@ -17,7 +22,10 @@ export default function Home() {
         <div className={styles.background}>
       <section id='banner' className={`${styles.banner} bg-black text-white`}>
 
+            
             <div className={styles.col}>
+              <FadeInAnimation>
+
               <div className={`${styles.texts} `}>
                 <h3 className='text-xl'>Olá, sou Vinicius Henrique</h3>
                 <h1 className='text-3xl font-bold'>Eu Transformo <strong className='text-cyan-400'>Problemas </strong>em ideias lucrativas por meio do <strong className='text-cyan-400'>Design</strong > e <strong className='text-cyan-400'>Código</strong>.</h1>
@@ -26,15 +34,20 @@ export default function Home() {
               </div>
               <div className={styles.buttons}>
 
-              <Link target='_blank' href='https://furyagency.000webhostapp.com/Vinicius%20Henrique%20-%20Frontend.pdf'><Button icon="true" style='ghost'>Curriculo</Button></Link>
+              <Link target='_blank' href='https://pdfhost.io/v/Q1~2mxx8L_Vinicius_Henrique_Frontend'><Button icon="true" style='ghost'>Curriculo</Button></Link>
               <Link href='/projects/'><Button  icon="true" style='line'>Projetos</Button></Link>
 
 
               </div>
+              </FadeInAnimation>
             </div>
+
           
             <div className={styles.col}>
+            <FadeInAnimation direction='left'>
             <Image style={{borderRadius:'50%'}} src={require('../public/images/picture.jpg')}></Image>
+
+            </FadeInAnimation>
             </div>
       </section>
         </div>
