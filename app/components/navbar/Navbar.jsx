@@ -96,7 +96,7 @@ function Navbar() {
           <ul className={styles.navLinks} >
             <LinkNav href='/' link='Inicio' />
             <LinkNav href='/about' link='Sobre Mim'></LinkNav>
-            <LinkNav href='#' link='Projetos'/>
+            <LinkNav href='/projects' link='Projetos'/>
             <LinkNav href='#' link='Skills'/>
           </ul>
         </div>

@@ -11,7 +11,8 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
   --Avenir: 'Avenir';
-  --Montserrat:'Montserrat'
+  --Montserrat:'Montserrat';
+  --primary-blue: #00BADE;
 }
 
 @media (prefers-color-scheme: dark) {
