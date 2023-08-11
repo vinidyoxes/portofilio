@@ -61,7 +61,7 @@
         width: 60%;
         display: flex;
         flex-direction: column;
-        align-items: end;
+        align-items: flex-end;
         justify-items: center;
         padding: 4rem 1rem;
         background-color: rgba(70, 131, 180, 0.993);
@@ -74,7 +74,7 @@
     .sideBar .links, .sideBar .navLinks, .sideBar .otherLinks  {
         display: flex;
         flex-direction: column;
-        align-items: start;
+        align-items: flex-start;
         width: 90%;
     }
 

@@ -27,9 +27,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <Head>
       <link href="/dist/output.css" rel="stylesheet"/>
-      <link rel="icon" href="/public/logoBranco.png"/>
+      <link rel="icon" type="image/x-icon" href="/app/favicon.ico"/>
       </Head>
-        <body className={  styles.main}>
+        <body className={styles.main}>
      
           <Provider>
 

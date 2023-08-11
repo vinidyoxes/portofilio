@@ -37,9 +37,9 @@ function Navbar() {
 
       <div className={`${styles.links}`}>
         <ul className={styles.navLinks} >
-          <LinkNav href='/' link='Inicio' />
-          <LinkNav href='/about' link='Sobre Mim'></LinkNav>
-          <LinkNav href='/projects' link='Projetos'/>
+          <LinkNav href='/' link='Home' />
+          <LinkNav href='/about' link='Who am i'></LinkNav>
+          <LinkNav href='/projects' link='Projects'/>
           <LinkNav href='#' link='Skills'/>
         </ul>
       </div>
@@ -60,7 +60,7 @@ function Navbar() {
         <Link target='_blank' href="https://github.com/vinidyoxes/"className="icon"><IconContext.Provider value={{size:'20px'}}><BsGithub/></IconContext.Provider></Link>
         <Link target='_blank' href="https://www.behance.net/vinidyoxes"className="icon"><Image src={require('/public/images/devicon-behance.svg')} width="25" height="25"></Image></Link>
         <Link target='_blank' href="https://www.linkedin.com/in/viniciushenrique-silva/"className="icon"><Image src={require('/public/images/skill-icons-linkedin.png')} width="25" height="25"></Image></Link>
-        <Link href="#"className="icon"></Link>
+        <Link target='_blank' href="https://furyagency.sytes.net/#"className="icon"><Image src='/icons/furyLogo.png' width="25" height="25"></Image></Link>
       </ul>
     </div>
 
@@ -104,8 +104,9 @@ function Navbar() {
         <div className={`${styles.otherLinks}`}>
       <ul className={` flex gap-4 items-center`}>
         <Link href="https://github.com/vinidyoxes/"className="icon"><BsGithub className='size-2em'></BsGithub></Link>
-        <Link href="https://www.behance.net/vinidyoxes"className="icon"><Image src={require('/public/images/devicon-behance.svg')} width="20" height="20"></Image></Link>
+        <Link href="https://www.behance.net/vinidyoxes"className="icon"><Image src='/images/devicon-behance.svg' width="20" height="20"></Image></Link>
         <Link href="https://www.linkedin.com/in/viniciushenrique-silva/"className="icon"><Image src={require('/public/images/skill-icons-linkedin.png')} width="20" height="20"></Image></Link>
+        <h2>adadad</h2>
       </ul>
     </div>
     <div className={`${styles.options}`}>

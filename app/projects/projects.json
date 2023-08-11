@@ -6,7 +6,9 @@
       "category": "design",
       "description": "User Interface project for a financial app",
       "date": "2023-08-10",
-      "img":"/images/projects/1/norway.jpg"
+      "img":"/images/projects/1/norway.jpg",
+      "viewProject":"https://www.behance.net/gallery/175298091/UXUI-Design-NorwayBank",
+      "viewDetails":"https://www.behance.net/gallery/175298091/UXUI-Design-NorwayBank"
 
     },
     {
@@ -16,7 +18,10 @@
       "category": "ux",
       "description": "Complete Branding Design, logot, and Website with Wordpress",
       "date": "2023-08-11",
-      "img": "/images/projects/2/carassini.jpg"
+      "img": "/images/projects/2/carassini.jpg",
+      "viewProject":"https://www.drcarassini.com.br",
+      "viewDetails":"https://www.behance.net/gallery/175653583/Website-for-Dental-Clinic"
+
     },
     {
       "id": 3,
@@ -25,7 +30,11 @@
       "category": "frontend",
       "description": "Multifuntional Website for products exposure",
       "date": "2023-08-12",
-      "img": "/images/projects/3/dabaudio.jpg"
+      "img": "/images/projects/3/dabaudio.jpg",
+      "viewProject":"https://www.dabaudio.com.br",
+      "viewDetails":"#"
+
+
 
     },
     {
@@ -35,7 +44,11 @@
       "category": "design",
       "description": "NextJS Project with React Hooks, SPA, Routes, REST Api",
       "date": "2023-08-13",
-      "img":"/images/projects/4/pokenext.jpeg"
+      "img":"/images/projects/4/pokenext.jpeg",
+      "viewProject":"https://pokenext-vinidyoxes.vercel.app",
+      "viewDetails":"#"
+
+
 
     }
   ]
