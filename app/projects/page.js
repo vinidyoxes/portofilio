@@ -3,6 +3,7 @@ import Checkbox from '../components/inputs/Checkbox/Checkbox'
 import FadeInAnimation from '../components/motion/fadeIn/FadeIn'
 import projects from './projects.json'
 import CardProjects from '../components/projects/CardProjects/CardProjects'
+import AnimatedElement from '../components/motion/slideInPushIn'
 
 
 function Projects() {
@@ -33,7 +34,11 @@ function Projects() {
             
         {projects.map((project,index)=>{
             return(
+              <AnimatedElement key={index} index={index}>
+                
                 <CardProjects key={index} project={project}></CardProjects>
+
+              </AnimatedElement>
             )
           })}
          

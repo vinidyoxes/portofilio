@@ -111,6 +111,7 @@
     }
     
     .backgroundVideo{
+        display: none;
         top: 20%;
         right: 0;
         height: 100vh;

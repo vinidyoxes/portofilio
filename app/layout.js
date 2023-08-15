@@ -31,8 +31,8 @@ export default function RootLayout({ children }) {
       </Head>
         <body className={styles.main}>
      
-          <Provider>
-
+          <Provider attribute="class">
+              
                 <Navbar></Navbar>
                 {children}
           </Provider>

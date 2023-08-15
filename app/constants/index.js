@@ -17,6 +17,7 @@ import indesign from '/public/icons/indesign.png'
 import nextjs from '/public/icons/nextjs.png'
 import git from '/public/icons/git.png'
 import aws from '/public/icons/aws.png'
+import vue from '/public/icons/vue.png'
 
   export const technologies = [
    
@@ -31,6 +32,10 @@ import aws from '/public/icons/aws.png'
     {
       name: "NextJS",
       icon: nextjs,
+    },
+    {
+      name:"VueJS",
+      icon:vue
     },
     {
       name: "Tailwindcss",
