@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const AnimatedElement = ({ children, index }) => {
-  const newIndex = index + 1
+  const newIndex = (index + 1) / 2
   const { ref, inView } = useInView({
     triggerOnce: true,
   });
@@ -14,7 +14,7 @@ const AnimatedElement = ({ children, index }) => {
       ref={ref}
       initial={{ opacity: 0, scale: 0.5 }}
       animate={{ opacity: inView ? 1 : 0, scale: inView ? 1 : 0 }}
-      transition={{ duration: newIndex * 0.2, delay: newIndex * 0.2}} // Adjust the multiplier as needed
+      transition={{ duration: 1, delay: newIndex * 0.2 }} // Adjust the multiplier as needed
     >
       {children}
     </motion.div>

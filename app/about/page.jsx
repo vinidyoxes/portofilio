@@ -17,7 +17,7 @@ function About() {
       </section>
       <div className={styles.backgroundVanta}>
 
-        <Vanta></Vanta>
+        About me
 
       </div>
     </main>
