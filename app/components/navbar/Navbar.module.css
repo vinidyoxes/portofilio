@@ -85,10 +85,11 @@
     }
     
     .sideBar .options{
-        justify-self: baseline;
+        justify-self: self-start;
         gap: 1rem;
         display: flex;
-        margin-top: 100%;
+        width: 90%;
+        margin-top: 50%;
         
     }
 
@@ -103,7 +104,8 @@
 
 
     .menu{
-        display: block;
+        display: flex;
+        align-items: center;
     }
     
 }

@@ -71,7 +71,9 @@ function Navbar() {
           {theme === "dark" ? <FiMoon size={20}/> : <FiSun size={20}/>}
           </span>
         </div>
+
       <div className={styles.menu}>
+      <Image src={require('/public/images/emojione-v-1-flag-for-brazil.svg')} width={20} height={20}></Image>  
 
      <Link href='#'onClick={handleClick}><Button><FiMenu size={20} color = {theme === 'dark' ? 'white' : 'black'} /></Button></Link>  
       </div>
@@ -110,7 +112,6 @@ function Navbar() {
       </ul>
     </div>
     <div className={`${styles.options}`}>
-        <Image src={require('/public/images/emojione-v-1-flag-for-brazil.svg')} width={20} height={20}></Image>  
        
        
         <span className='cursor-pointer' onClick={()=>{setTheme(theme === "dark" ? "light" : "dark")}}>
