@@ -18,9 +18,25 @@ import nextjs from '/public/icons/nextjs.png'
 import git from '/public/icons/git.png'
 import aws from '/public/icons/aws.png'
 import vue from '/public/icons/vue.png'
+import html from '/public/icons/html.png'
+import css from '/public/icons/css.png'
+import three from '/public/icons/three.png'
+import framer from '/public/icons/framer.png'
 
   export const technologies = [
    
+
+
+    {
+      name: "HTML5",
+      icon: html,
+      type: 'frontend',
+    },
+    {
+      name: "CSS3",
+      icon: css,
+      type: 'frontend',
+    },
     {
       name: "JavaScript",
       icon: javascript,
@@ -41,6 +57,18 @@ import vue from '/public/icons/vue.png'
     {
       name:"VueJS",
       icon:vue,
+      type: 'frontend',
+
+    },
+    {
+      name:"ThreeJS",
+      icon:three,
+      type: 'frontend',
+
+    },
+    {
+      name:"Framer Motion",
+      icon:framer,
       type: 'frontend',
 
     },
@@ -69,6 +97,12 @@ import vue from '/public/icons/vue.png'
         type: 'ux',
         
       },
+      {
+        name:"Framer",
+        icon:framer,
+        type: 'ux',
+  
+      },
       
       {
         name: "UX Design",
@@ -94,6 +128,12 @@ import vue from '/public/icons/vue.png'
         icon: indesign,
         type: 'graphic',
 
+      },
+      {
+        name: "Figma",
+        icon: figma,
+        type: 'graphic',
+        
       },
       {
         name: "Wordpress",
