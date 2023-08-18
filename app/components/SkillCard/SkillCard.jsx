@@ -17,7 +17,7 @@ function SkillCard({title}) {
 
             return (
 
-                <div className='icon__Container w-12 h-12 relative'>
+                <div key={index} className='icon__Container w-12 h-12 relative'>
                 <Image src={item.icon} layout='fill'></Image>
                 </div>
 
