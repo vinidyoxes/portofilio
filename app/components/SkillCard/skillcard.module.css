@@ -1,0 +1,31 @@
+.wrap{
+    border-radius: 7px;
+    background: rgba(0, 0, 0, 0.80);
+}
+
+.title{
+    margin: 1rem 2rem;
+    padding: 1rem 0;
+    position: relative;
+    border-bottom: 0.5px solid #fff;
+    font-family: var(--Montserrat);
+    font-weight: 300;
+    font-size: 1.25rem;
+    font-kerning: 10px;
+    letter-spacing: .155rem;
+    text-transform: uppercase;
+}
+
+
+
+.skillCard{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 100%;
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 80px;
+}

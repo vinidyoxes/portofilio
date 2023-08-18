@@ -40,7 +40,7 @@ function Navbar() {
           <LinkNav href='/' link='Home' />
           <LinkNav href='/about' link='Who am i'></LinkNav>
           <LinkNav href='/projects' link='Projects'/>
-          <LinkNav href='#' link='Skills'/>
+          <LinkNav href='/skills' link='Skills'/>
         </ul>
       </div>
 

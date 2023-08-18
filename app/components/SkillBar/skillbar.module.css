@@ -1,0 +1,18 @@
+/* components/SkillBar.module.css */
+.skillBar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .skillLabel {
+    flex: 1;
+    font-size: 14px;
+  }
+  
+  .bar {
+    height: 15px;
+    background-color: #ddd;
+    transition: width 0.5s ease;
+  }
+  

@@ -24,83 +24,121 @@ import vue from '/public/icons/vue.png'
     {
       name: "JavaScript",
       icon: javascript,
+      type: 'frontend',
     },
     {
       name: "ReactJS",
       icon: reactjs,
+      type: 'frontend',
+
     },
     {
       name: "NextJS",
       icon: nextjs,
+      type: 'frontend',
+
     },
     {
       name:"VueJS",
-      icon:vue
+      icon:vue,
+      type: 'frontend',
+
     },
     {
       name: "Tailwindcss",
       icon: tailwindcss,
+      type: 'frontend',
+
     },
     {
       name: "Styledcomponents",
       icon: styledcomponents,
+      type: 'frontend',
+
     },
     
     {
       name: "Bootstrap",
       icon: bootstrap,
+      type: 'frontend',
+
     },
     {
         name: "Figma",
         icon: figma,
+        type: 'ux',
+        
       },
+      
       {
         name: "UX Design",
         icon: ux,
+        type: 'ux',
+
       },
 
       {
         name: "Illustrator",
         icon: illustrator,
+        type: 'graphic',
+
       },
       {
         name: "Photoshop",
         icon: photoshop,
+        type: 'graphic',
+
       },
       {
         name: "inDesign",
         icon: indesign,
+        type: 'graphic',
+
       },
       {
         name: "Wordpress",
         icon: wordpress,
+        type: 'frontend',
+
       },
     
     
       {
         name: "SEO",
         icon: seo,
+        type: 'marketing',
+
       },
       {
         name: "Google ADS",
         icon: ads,
+        type: 'marketing',
+
       },
 
       {
         name: "Java",
         icon: java,
+        type: 'backend',
+
       },
       {
         name: "LAMP",
         icon: linux,
+        type: 'backend',
+
       },
       {
         name: "AWS",
         icon: aws,
+        type: 'backend',
+
       },
       {
         name: "GIT",
         icon: git,
+        type: 'backend',
+
       },
     
       
