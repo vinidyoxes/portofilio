@@ -99,7 +99,7 @@ function Navbar() {
             <LinkNav href='/' link='Inicio' />
             <LinkNav href='/about' link='Sobre Mim'></LinkNav>
             <LinkNav href='/projects' link='Projetos'/>
-            <LinkNav href='#' link='Skills'/>
+            <LinkNav href='/skills' link='Skills'/>
           </ul>
         </div>
 
