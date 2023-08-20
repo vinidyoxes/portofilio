@@ -7,13 +7,11 @@ import styles from './skillcard.module.css'
 function SkillCard({title}) {
     const lowerCase = title.toLowerCase()
     const filteredTechs = technologies.filter(technology => {  return ( technology.type === lowerCase)})
-    console.log(filteredTechs)
   return (
     <div className={styles.wrap}>
         <h2 className={styles.title}>{title}</h2>
         <section className={styles.skillCard}>
         {filteredTechs.map((item,index) =>{
-          console.log(filteredTechs)
 
             return (
 
