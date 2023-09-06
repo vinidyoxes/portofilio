@@ -14,7 +14,11 @@ import FadeInAnimation from './components/motion/fadeIn/FadeIn'
 
 
 
+
+
+
 export default function Home() {
+
 
   return (
     <main className={styles.main}>

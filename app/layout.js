@@ -22,12 +22,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
 
 
-
   return (
     <html lang="en">
       <Head>
       <link href="/dist/output.css" rel="stylesheet"/>
       <link rel="icon" type="image/x-icon" href="/app/favicon.ico"/>
+      <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet"/>
+                
       </Head>
         <body className={styles.main}>
      
