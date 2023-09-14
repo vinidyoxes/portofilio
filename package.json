@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/font": "^13.4.19",
     "@react-three/drei": "^9.80.3",
     "@react-three/fiber": "^8.13.6",
     "autoprefixer": "10.4.14",
