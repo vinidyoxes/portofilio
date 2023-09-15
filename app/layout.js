@@ -3,25 +3,21 @@
 import Head from 'next/head'
 import Navbar from './components/navbar/Navbar'
 import './styles/globals.css'
-import { Inter } from 'next/font/google'
 import styles from './styles/layout.module.css'
 import Provider from './provider'
-
+import { Inter, Montserrat, Roboto } from 'next/font/google'
 
 
 
 
 const inter = Inter({ subsets: ['latin'] })
+const montserrat = Montserrat({subsets:['latin'], weight:['400','300','800'], fallback:['inter']})
+const roboto = Roboto({subsets:['latin'], weight:['400']})
 
-const avenir = localFont({
-  src: './fonts/AvenirLTStd-Black.otf',
-  variable: '--font-surt-bold',
-})
-
-export const metadata = {
-  title: 'Vini Dyoxes | Frontend UX Developer',
-  description: 'Portfolio',
-}
+  export const metadata = {
+    title: 'Vini Dyoxes | Frontend UX Developer',
+    description: 'Portfolio',
+  }
 
 export default function RootLayout({ children }) {
 
@@ -38,7 +34,7 @@ export default function RootLayout({ children }) {
       <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"rel="stylesheet" />
                 
       </Head>
-        <body className={styles.main}>
+        <body className={`${styles.main} ${montserrat.className}`}>
      
           <Provider attribute="class">
               
