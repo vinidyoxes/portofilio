@@ -21,14 +21,14 @@ import { useTheme } from 'next-themes'
 function Navbar() {
   const [mounted, setMounted] = useState('false');
   useEffect(() => setMounted(true), []);
-
-  
   const { theme, setTheme } = useTheme();
   const [toggle, setToggle] = useState(false); // Changed SetToggle to setToggle
   const handleClick = () => {
     setToggle(!toggle);
   }
-  
+
+  const iconColor = mounted ? (theme === 'dark' ? 'white' : 'black') : 'black';
+    
   if (!mounted) {
     return null;
   }
@@ -75,7 +75,7 @@ function Navbar() {
       <div className={styles.menu}>
       <Image src={require('/public/images/emojione-v-1-flag-for-brazil.svg')} width={20} height={20}></Image>  
 
-     <Link href='#'onClick={handleClick}><Button><FiMenu size={20} color = {theme === 'dark' ? 'white' : 'black'} /></Button></Link>  
+     <Link href='#'onClick={handleClick}><Button><FiMenu size={20} color = {iconColor} /></Button></Link>  
       </div>
 
 

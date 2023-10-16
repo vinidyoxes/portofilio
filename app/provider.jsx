@@ -12,7 +12,7 @@ function Provider({children}) {
   if(!mounted){ return <>{children}</>}
 
   return (
-    <ThemeProvider>
+    <ThemeProvider defaultTheme='dark'>
         {children}
     </ThemeProvider>
   )
