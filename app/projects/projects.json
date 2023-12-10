@@ -50,6 +50,18 @@
 
 
 
+    },
+    {
+      "id": 5,
+      "company": "Personal",
+      "name": "Cinemania TMDB API",
+      "category": "frontend",
+      "description": "ViteJS Project with TMDB API, React Router DOM",
+      "date": "2023-12-10",
+      "img":"/images/projects/5/cinemaniathumb.png",
+      "viewProject":"https://cinemania-two.vercel.app/",
+      "viewDetails":"#"
+
     }
   ]
   
