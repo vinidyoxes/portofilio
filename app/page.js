@@ -7,10 +7,12 @@ import Link from 'next/link'
 import SlideIn from './components/motion/slideIn/SlideIn'
 import SlideFadeAnimation from './components/motion/slideIn/SlideIn'
 import FadeInAnimation from './components/motion/fadeIn/FadeIn'
+import { Inter } from 'next/font/google'
+import localFont from '@next/font/local'
 
 
-
-
+const inter = Inter({weight:['400'],subsets:['latin']})
+const avenir = localFont({src:'../public/fonts/AvenirLTStd-Book.otf'})
 
 
 
@@ -21,7 +23,7 @@ export default function Home() {
 
 
   return (
-    <main className={styles.main}>
+    <main className={`${styles.main}`}>
 
         <div className={styles.background}>
       <section id='banner' className={`${styles.banner} bg-black text-white`}>
@@ -30,10 +32,10 @@ export default function Home() {
             <div className={styles.col}>
               <FadeInAnimation>
 
-              <div className={`${styles.texts} `}>
+              <div className={`${styles.texts}`}>
                 <h3 className='text-xl'>Olá, sou Vinicius Henrique</h3>
                 <h1 className='text-3xl font-bold'>Eu Transformo <strong className='text-cyan-400'>Problemas </strong>em ideias lucrativas por meio do <strong className='text-cyan-400'>Design</strong > e <strong className='text-cyan-400'>Código</strong>.</h1>
-                <p className='text-lg font-display font-400'>Como um desenvolvedor Fullstack UX Designer posso
+                <p className={`text-lg font-display font-400 ${avenir.className}`}>Como um desenvolvedor Fullstack UX Designer posso
     projetar soluções end-to-end, desde a concepção de uma ideia e validação no mercado (UX Design & Research) até na construção do produto final (ReactJS & Java Spring Boot).</p>
               </div>
               <div className={styles.buttons}>

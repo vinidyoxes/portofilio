@@ -13,8 +13,8 @@ function Carrousel() {
          return(
             <div key={index}>
 
-                 <div  className={styles.technology} style={{textAlign:'center', display:'flex', flexDirection:'column', alignItems:'center'}}>
-                     <span><Image src={item.icon} width="50" height="50"></Image></span>
+                 <div className={styles.technology} style={{textAlign:'center', display:'flex', flexDirection:'column', alignItems:'center'}}>
+                     <span style={{width:'50px', height:'50px', overflow:'hidden', display:'block', position:'relative'}}><Image src={item.icon} layout="fill" objectFit="contain" ></Image></span>
                      <h4>{item.name}</h4>
                  </div>
 

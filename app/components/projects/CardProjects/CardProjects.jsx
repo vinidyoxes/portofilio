@@ -11,7 +11,7 @@ function CardProjects({project}) {
   console.log({})
   return (
 
-        <div className={`${styles.card} group rounded-3xl w-fill min-h-300 relative w-full h-full`} style={{minHeight:'300px'}}>
+        <div className={`${styles.card} group rounded-3xl sm:min-h-300 lg:min-h-500 w-fill relative w-full h-full`}>
             <div className={styles.overlay}>
               <div className={styles.content__overlay}>
                 <h3>{project.company}</h3>

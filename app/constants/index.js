@@ -67,12 +67,6 @@ import framer from '/public/icons/framer.png'
 
     },
     {
-      name:"Framer Motion",
-      icon:framer,
-      type: 'frontend',
-
-    },
-    {
       name: "Tailwindcss",
       icon: tailwindcss,
       type: 'frontend',
@@ -128,12 +122,6 @@ import framer from '/public/icons/framer.png'
         icon: indesign,
         type: 'graphic',
 
-      },
-      {
-        name: "Figma",
-        icon: figma,
-        type: 'graphic',
-        
       },
       {
         name: "Wordpress",
