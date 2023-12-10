@@ -62,7 +62,20 @@
       "viewProject":"https://cinemania-two.vercel.app/",
       "viewDetails":"#"
 
+    },
+    {
+      "id": 5,
+      "company": "GTA VI",
+      "name": "UX/UI Website Concept",
+      "category": "UX Design",
+      "description": "UX/UI Design for GTA 6 Website",
+      "date": "2023-12-05",
+      "img":"/images/projects/5/gta6ux.jpg",
+      "viewProject":"https://www.behance.net/gallery/186349245/GTA-IV-Website-Concept",
+      "viewDetails":"https://www.behance.net/gallery/186349245/GTA-IV-Website-Concept"
+
     }
+
   ]
   
 
