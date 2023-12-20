@@ -30,7 +30,7 @@ function Projects() {
       </div>
 
 
-      <div className='max-w-full gap-0.5 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+      <div className='gap-4 p-20 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
             
         {projects.map((project,index)=>{
             return(

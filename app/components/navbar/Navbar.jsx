@@ -55,23 +55,26 @@ function Navbar() {
 
         </div>
 
-    <div className={`${styles.otherLinks}`}>
-      <ul className={` flex gap-2 items-center social`}>
-        <Link target='_blank' href="https://github.com/vinidyoxes/"className="icon"><IconContext.Provider value={{size:'20px'}}><BsGithub/></IconContext.Provider></Link>
-        <Link target='_blank' href="https://www.behance.net/vinidyoxes"className="icon"><Image src={require('/public/images/devicon-behance.svg')} width="25" height="25"></Image></Link>
-        <Link target='_blank' href="https://www.linkedin.com/in/viniciushenrique-silva/"className="icon"><Image src={require('/public/images/skill-icons-linkedin.png')} width="25" height="25"></Image></Link>
-        <Link target='_blank' href="https://furyagency.sytes.net/#"className="icon"><Image src='/icons/furyLogo.png' width="25" height="25"></Image></Link>
-      </ul>
-    </div>
+<div className='flex gap-10 lg:px-20 md:px-10'>
 
-      <div className={`${styles.options}`}>
-        <Image src={require('/public/images/emojione-v-1-flag-for-brazil.svg')} width={20} height={20}></Image>  
-         <span className='cursor-pointer' onClick={()=>{setTheme(theme === "dark" ? "light" : "dark")}}>
- 
-          {theme === "dark" ? <FiMoon size={20}/> : <FiSun size={20}/>}
-          </span>
-        </div>
 
+          <div className={`${styles.otherLinks}`}>
+            <ul className={` flex gap-2 items-center social`}>
+              <Link target='_blank' href="https://github.com/vinidyoxes/"className="icon"><IconContext.Provider value={{size:'20px'}}><BsGithub/></IconContext.Provider></Link>
+              <Link target='_blank' href="https://www.behance.net/vinidyoxes"className="icon"><Image src={require('/public/images/devicon-behance.svg')} width="25" height="25"></Image></Link>
+              <Link target='_blank' href="https://www.linkedin.com/in/viniciushenrique-silva/"className="icon"><Image src={require('/public/images/skill-icons-linkedin.png')} width="25" height="25"></Image></Link>
+              <Link target='_blank' href="https://furyagency.sytes.net/#"className="icon"><Image src='/icons/furyLogo.png' width="25" height="25"></Image></Link>
+            </ul>
+          </div>
+
+            <div className={`${styles.options}`}>
+              <Image src={require('/public/images/emojione-v-1-flag-for-brazil.svg')} width={20} height={20}></Image>  
+              <span className='cursor-pointer' onClick={()=>{setTheme(theme === "dark" ? "light" : "dark")}}>
+      
+                {theme === "dark" ? <FiMoon size={20}/> : <FiSun size={20}/>}
+                </span>
+              </div>
+</div>
       <div className={styles.menu}>
       <Image src={require('/public/images/emojione-v-1-flag-for-brazil.svg')} width={20} height={20}></Image>  
 

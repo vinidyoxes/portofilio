@@ -23,6 +23,7 @@
 
 .logoContainer{
     display: flex;
+    flex-grow: 2;
     flex-direction: column;
     height: 80px;
     width: 80px;

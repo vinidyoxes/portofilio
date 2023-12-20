@@ -25,7 +25,7 @@ export default function Home() {
       </Head>
 
       <div className="globe flex align-center" >
-        <Canvas shadows dpr={[1, 2]} camera={{position: [0, 0, 1], fov: 50 }}>
+        <Canvas shadows dpr={[1, 2]} camera={{position: [1, 10, 10], fov: 50 }}>
           <ambientLight intensity={0.7} />
           <spotLight intensity={0.5} angle={0.1} penumbra={1} position={[10, 15, 10]} castShadow />
           <Suspense fallback={null}>
