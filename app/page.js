@@ -51,7 +51,7 @@ export default function Home() {
           
             <div className={styles.col}>
             <FadeInAnimation direction='left'>
-            <Image style={{borderRadius:'50%'}} src={require('../public/images/picture.jpg')}></Image>
+            <Image style={{borderRadius:'0%', zIndex:'9999'}} src={require('../public/images/me2.png')}></Image>
 
             </FadeInAnimation>
             </div>
