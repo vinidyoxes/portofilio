@@ -10,6 +10,7 @@ import { Inter, Montserrat, Roboto } from 'next/font/google'
 
 
 
+
 const inter = Inter({ subsets: ['latin'] })
 const montserrat = Montserrat({subsets:['latin'], weight:['400','300','800'], fallback:['inter']})
 const roboto = Roboto({subsets:['latin'], weight:['400']})
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
+      <meta name="description" content={metadata.description} />
       <link href="/dist/output.css" rel="stylesheet"/>
       <link rel="icon" type="image/x-icon" href="/app/favicon.ico"/>
       <link href="https://fonts.cdnfonts.com/css/avenir" rel="stylesheet"/>
@@ -41,7 +43,6 @@ export default function RootLayout({ children }) {
                 <Navbar></Navbar>
                 {children}
           </Provider>
-
         </body>
     </html>
   )

@@ -34,7 +34,7 @@ export default function Home() {
 
               <div className={`${styles.texts}`}>
                 <h3 className='text-xl'>Olá, sou Vinicius Henrique</h3>
-                <h1 className='text-3xl font-bold'>Eu Transformo <strong className='text-cyan-400'>Problemas </strong>em ideias lucrativas por meio do <strong className='text-cyan-400'>Design</strong > e <strong className='text-cyan-400'>Código</strong>.</h1>
+                <h1 className={`text-3xl font-bold`}>Eu Transformo <strong className='text-cyan-400'>Problemas </strong>em ideias lucrativas por meio do <strong className='text-cyan-400'>Design</strong > e <strong className='text-cyan-400'>Código</strong>.</h1>
                 <p className={`text-lg font-display font-400 ${avenir.className}`}>Como um desenvolvedor Fullstack UX Designer posso
     projetar soluções end-to-end, desde a concepção de uma ideia e validação no mercado (UX Design & Research) até na construção do produto final (ReactJS & Java Spring Boot).</p>
               </div>
