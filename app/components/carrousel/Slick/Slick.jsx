@@ -6,8 +6,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 
-function Slick({children}) {
-    var settings = {
+function Slick({children,settings}) {
+    var defaultSettings  = {
+      dots: true,
       infinite: true,
       slidesToShow: 8,
       slidesToScroll: 1,
@@ -29,9 +30,11 @@ function Slick({children}) {
         }]
       };
 
+      const mergedSettings = { ...defaultSettings, ...settings };
+
   return (
     <div>
-         <Slider {...settings}>
+         <Slider {...mergedSettings}>
            {children}
         </Slider>
     </div>

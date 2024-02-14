@@ -2,14 +2,27 @@
     display: flex;
     flex-direction: column;
     color: black;
-    width: 380px;
+    min-width: 380px;
     height: 500px;
     background-color: #F5F5F5;
     border-radius: 14px;
     padding: 40px 30px;
     gap: 24px;
+    margin: 0 1%;
+}
+
+.card:hover{
+    cursor: pointer;
 }
 
 .description{
     overflow: hidden;
+}
+
+@media screen and (max-width:480px) {
+    .card{
+    min-width: 90%;
+     max-height: 400px;
+     margin: 0 1%;
+    }
 }

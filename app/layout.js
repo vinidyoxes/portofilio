@@ -36,14 +36,14 @@ export default function RootLayout({ children }) {
       <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"rel="stylesheet" />
                 
       </Head>
-        <body className={`${styles.main} ${montserrat.className}`}>
+        <Provider attribute="class">
+          <body className={`${styles.main} ${montserrat.className}`}>
      
-          <Provider attribute="class">
-              
                 <Navbar></Navbar>
+              
                 {children}
-          </Provider>
         </body>
+          </Provider>
     </html>
   )
 }
