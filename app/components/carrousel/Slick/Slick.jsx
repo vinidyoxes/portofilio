@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 function Slick({children,settings}) {
     var defaultSettings  = {
-      dots: true,
+      dots: false,
       infinite: true,
       slidesToShow: 8,
       slidesToScroll: 1,

@@ -29,7 +29,8 @@ function About() {
           infinite: true,
           centerPadding: "20px",
           slidesToShow: 1,
-          speed: 500
+          speed: 500,
+          dots: true
         }
       }]
   };
