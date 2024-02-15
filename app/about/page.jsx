@@ -23,7 +23,7 @@ function About() {
     infinite: false,
     autoplay:false,
     centerPadding: "20px",
-    slidesToShow: 3,
+    slidesToShow: 4,
     autoplaySpeed: 2000,
     responsive: [
       {
