@@ -11,11 +11,13 @@ function CardProjects({project}) {
   console.log({})
   return (
 
-       <div className={`${styles.card} group rounded-3xl sm:min-h-300 relative w-500 h-400`}>
+       <div className={`${styles.card} group rounded-3xl sm:min-h-300 relative`}>
   <div className={styles.overlay}>
     <div className={styles.content__overlay}>
-      <h3>{project.company}</h3>
-      <p>{project.name}</p>
+        <div className='project-texts my-5'>
+          <h3 className='font-extrabold font-display' >{project.company}</h3>
+          <p>{project.name}</p>
+        </div>
       <div className={`flex justify-center ${styles.buttons}` }>
         {project.viewProject === '#' ? '' : (
           <Link target='_blank' href={project.viewProject}>
