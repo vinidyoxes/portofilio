@@ -13,6 +13,14 @@
   .card{
     min-height: 300px;
   }
+
+  .buttons{
+    pointer-events: none;
+  }
+
+  .card:hover .buttons{
+    pointer-events: auto;
+  }
   
 }
 
@@ -26,7 +34,11 @@
 .overlay{
     position: absolute;
     z-index: 2;
-    background: #004872;
+    background: linear-gradient(
+    46deg,
+    rgba(0, 72, 114, 1) 0%,
+    rgba(0, 0, 0, 1) 101.57%
+  );
     width: 100%;
     height: 100%;
     opacity: 0;

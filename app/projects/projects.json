@@ -64,7 +64,7 @@
 
     },
     {
-      "id": 5,
+      "id": 6,
       "company": "GTA VI",
       "name": "UX/UI Website Concept",
       "category": "UX Design",
@@ -73,6 +73,18 @@
       "img":"/images/projects/6/gta6ux.jpg",
       "viewProject":"https://www.behance.net/gallery/186349245/GTA-IV-Website-Concept",
       "viewDetails":"https://www.behance.net/gallery/186349245/GTA-IV-Website-Concept"
+
+    },
+    {
+      "id": 7,
+      "company": "Bluesky Capital",
+      "name": "Website",
+      "category": "frontend",
+      "description": "Website for a capital company",
+      "date": "2023-06-05",
+      "img":"/images/projects/7/bluesky.png",
+      "viewProject":"https://blueskycapital.com.br/",
+      "viewDetails":"#"
 
     }
 
