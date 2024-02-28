@@ -40,7 +40,7 @@ export default function Home() {
               </div>
               <div className={styles.buttons}>
 
-              <Link target='_blank' href='https://pdfhost.io/v/Q1~2mxx8L_Vinicius_Henrique_Frontend'><Button icon="true" style='ghost'>Curriculo</Button></Link>
+              <Link target='_blank' href='https://drive.google.com/file/d/1d5oXCrQcuHVvp5hAuIbAbVbCstynVqjQ/view?usp=sharing'><Button icon="true" style='ghost'>Curriculo</Button></Link>
               <Link href='/projects/'><Button  icon="true" style='line'>Projetos</Button></Link>
 
 

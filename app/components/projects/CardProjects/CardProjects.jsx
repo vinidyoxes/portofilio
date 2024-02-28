@@ -22,14 +22,14 @@ function CardProjects({project}) {
         {project.viewProject === '#' ? '' : (
           <Link target='_blank' href={project.viewProject}>
             <Button style='line' icon='true' styled={{color:"white"}}>
-              View Project
+              View Live Project
             </Button>
           </Link>
         )}
         {project.viewDetails ==='#' ? '' : (
           <Link target='_blank' href={project.viewDetails}>
             <Button style='line' styled={{color:"white"}}>
-              View Details
+              View on Behance
             </Button>
           </Link>)}
       </div>
