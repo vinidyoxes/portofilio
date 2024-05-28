@@ -10,6 +10,9 @@ import Slick from '../components/carrousel/Slick/Slick'
 import FadeInAnimation from '../components/motion/fadeIn/FadeIn'
 import SideBarMotion from '../components/motion/sideBarMotion/SideBarMotion'
 import FadeInUpAnimation from '../components/motion/fadeInUp/FadeInUp'
+import { Experiences } from '../components/Experiences/Experiences.jsx'
+import experiences from  './experiences.json'
+
 
 
 
@@ -40,10 +43,19 @@ function About() {
       }]
   };
   return (
-    <main className='box-border max-w-full'>
-    <section className='overflow-hidden flex flex-col justify-center items-center min-h-full px-0 lg:px-20 box-border max-w-full '>
+    <main className='box-border max-w-full overflow-hidden'>
+    <section className=' flex flex-col justify-center items-center px-0 lg:px-20 box-border max-w-full '>
       <div className='max-w-full w-full'> {/* Adicione um contêiner com largura máxima */}
         <div className={`flex flex-col justify-center md:justify-center lg:justify-start gap-y-2 box-border`}>
+
+          <div className='flex flex-col texts items-center md:items-center lg:items-start box-border py-12'>
+              <FadeInAnimation>
+                  <h2 className='font-bold text-2xl lg:text-3xl'>Experience 👨‍💻 </h2>
+                  <p>{`My work experience`}</p>
+              </FadeInAnimation>
+            <Experiences experiences={experiences}></Experiences>
+            </div>
+
           
           <div className='flex flex-col texts items-center md:items-center lg:items-start box-border py-12'>
             <FadeInAnimation>

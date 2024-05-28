@@ -1,0 +1,9 @@
+.verticalElementTitle{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+[data-theme="light"].vertical-timeline::before{
+    background-color: black !important;
+}
+    

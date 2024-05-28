@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "company": "IBM",
+        "date": "Mar 2024 — Current",
+        "role": "Frontend Developer / AEM Devloper",
+        "description": "At IBM, my role involves creating, updating, and troubleshooting IBM pages across 44 languages worldwide, encompassing over 40,000 pages under my purview. Additionally, I have taken charge of developing and sustaining the Think 2024 Event pages, hosted by IBM. Presently, I serve as one of the hosts for our Developers Weekly Alignment sessions.",
+        "companyLogo":"/images/experiences/ibm.png",
+        "background" : "#226FBC"
+      },
+      {
+        "id": 2,
+        "company": "Phoenix Publicidade",
+        "date": "Aug 2023 - Mar 2024",
+        "role": "Frontend Developer / Wordpress Developer ",
+        "description": "Website Developement in Wordpress, Drupal,  and others CMS Creation of software, websites and online stores in Wordpress, HTML/CSS + JS and ReactJS. Paid Traffic and Social Media Management on Google ads and Meta ads. Creation of graphic arts for social networks: flyers, business cards, logo, branding, etc.",
+        "companyLogo":"/images/experiences/phoenix.png",
+        "background" : "#D01624"
+      },
+      {
+        "id": 3,
+        "company": "NorwayBank",
+        "date": " Jun 2021 - Mar 2023",
+        "role": "Frontend Developer / UX Designer",
+        "description": "Responsible for the development of a UI for a complete banking core, including all the functionalities of a digital bank, and its mobile app version. Also designed websites, landing pages, and some visual content for the company.",
+        "companyLogo":"/images/experiences/norway.png",
+        "background" : "#056065"
+      },
+      {
+        "id": 3,
+        "company": "Fury Agency",
+        "date": "2021 - Current",
+        "role": "CEO",
+        "description": "In my own Digital Marketing Agency, I developed websites and online stores using Wordpress, HTML/CSS + JS, and ReactJS for my clients. Additionally, I managed paid traffic and social media for their companies, which involved creating graphic assets for their social networks, business cards, logos, branding, etc.",
+        "companyLogo":"/images/experiences/fa.png",
+        "background" : "#840010"
+      },
+      {
+        "id": 4,
+        "company": "RSN Brasil",
+        "date": "Jan 2021 - Jun 2021",
+        "role": "Webdeveloper",
+        "description": "Developement of interfaces for clients' websites and virtual stores, always aiming at better usability and conversions. Development of websites and ecommerces whit wordpress, with integrations for payment gateways and analytics. High converting landing pages. Campaign Management for Google Ads for customers and the company itself.",
+        "companyLogo":"/images/experiences/fa.png",
+        "background" : "#840010"
+      }
+]
