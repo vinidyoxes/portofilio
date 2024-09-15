@@ -22,10 +22,12 @@ export const Experiences = ({ experiences }) => {
             contentStyle={{ background: experience.background, color: '#fff' }}
             contentArrowStyle={{ borderRight: `7px solid ${experience.background}` }}
             date={experience.date}
+            animate={1}
             iconStyle={{ background: experience.background, color: '#fff', overflow: 'hidden' }}
             icon={<Image src={experience.companyLogo} fill="true" objectFit="cover" alt={experience.company} />}
             visible={true}
             //lineColor={theme === 'white' ? '#000' : '#fff'  }
+            
           >
             <h3 className={styles.verticalElementTitle}>{experience.company}</h3>
             <h4 className="vertical-timeline-element-subtitle">{experience.role}</h4>

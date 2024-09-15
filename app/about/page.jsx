@@ -21,6 +21,9 @@ import experiences from  './experiences.json'
 
 function About() {
   const customSettings = {
+    centerMode: true, 
+    swipeToSlide: true,
+    speed: 500,
     className: "center",
     centerMode: false,
     infinite: false,
@@ -30,23 +33,44 @@ function About() {
     autoplaySpeed: 2000,
     responsive: [
       {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1600,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: false,
+          dots: true,
+          centerMode: false, 
+          swipeToSlide: true,
+        }
+      },
+      {
         breakpoint: 480,
         settings: {
           className: "center",
           centerMode: true,
-          infinite: true,
+          infinite: false,
           centerPadding: "20px",
           slidesToShow: 1,
           speed: 500,
           dots: true
-        }
-      }]
+        } 
+      },
+    ]
   };
   return (
     <main className='box-border max-w-full overflow-hidden'>
     <section className=' flex flex-col justify-center items-center px-0 lg:px-20 box-border max-w-full '>
       <div className='max-w-full w-full'> {/* Adicione um contêiner com largura máxima */}
-        <div className={`flex flex-col justify-center md:justify-center lg:justify-start gap-y-2 box-border`}>
+        <div className={`flex flex-col justify-center md:justify-center lg:justify-start gap-y-2 box-border py-12`}>
 
           <div className='flex flex-col texts items-center md:items-center lg:items-start box-border py-12'>
               <FadeInAnimation>

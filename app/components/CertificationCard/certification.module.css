@@ -11,13 +11,43 @@
     margin: 0 1%;
 }
 
+.card img{
+    border-radius: 50px;
+}
 
 .card:hover{
     cursor: pointer;
 }
 
 .description{
-    overflow: hidden;
+    overflow-x: hidden;
+}
+
+.description p{
+    margin-right: 1rem;
+    text-align: justify;
+}
+
+.description::-webkit-scrollbar {
+    background: none;
+    width: 5px;
+    border-radius: 50px;
+    margin-left: 5rem;
+}
+
+.description::-webkit-scrollbar-track {
+    border-radius: 50px;
+    box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+    margin-left: 5rem;
+
+}
+
+.description::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+    width: 5px;
+    margin-left: 5rem;
+
 }
 
 @media screen and (max-width:480px) {
